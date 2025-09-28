@@ -32,4 +32,3 @@ class Lannister(Character):
             return cls(names, is_alive)
         else:
             return [cls(name, is_alive) for name in names]
-

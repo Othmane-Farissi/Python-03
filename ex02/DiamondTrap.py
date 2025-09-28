@@ -1,7 +1,8 @@
 from S1E7 import Baratheon, Lannister
 
+
 class King(Baratheon, Lannister):
-    """King family member""" 
+    """King family member"""
 
     def set_eyes(self, color):
         """Setter for eyes colors"""

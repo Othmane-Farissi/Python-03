@@ -7,9 +7,9 @@ class Baratheon(Character):
     def __init__(self, first_name, is_alive=True):
         super().__init__(first_name, is_alive=True)
         self.family_name = "Baratheon"
-        self.eyes = "brown" 
+        self.eyes = "brown"
         self.hairs = "dark"
-    
+
     def die(self):
         self.is_alive = False
 
@@ -25,7 +25,7 @@ class Lannister(Character):
     def __init__(self, first_name, is_alive=True):
         super().__init__(first_name, is_alive=True)
         self.family_name = "Lannister"
-        self.eyes = "brown" 
+        self.eyes = "brown"
         self.hairs = "dark"
 
     def die(self):
@@ -43,4 +43,3 @@ class Lannister(Character):
             return cls(names, is_alive)
         else:
             return [cls(name, is_alive) for name in names]
-
